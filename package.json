@@ -2,7 +2,9 @@
   "name": "v-nx-demo",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve app": "nx run offical-app:serve"
+  },
   "private": true,
   "dependencies": {
     "@nx-plus/vue": "^15.0.0-rc.0",
