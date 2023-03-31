@@ -5,12 +5,9 @@
   "sourceRoot": "apps/offical-web/src",
   "targets": {
     "build": {
-      "executor": "@nx-plus/vue:browser",
+      "executor": "@nrwl/vite:build",
       "options": {
-        "dest": "dist/apps/offical-web",
-        "index": "apps/offical-web/public/index.html",
-        "main": "apps/offical-web/src/main.ts",
-        "tsConfig": "apps/offical-web/tsconfig.app.json"
+        "outputPath": "dist/apps/offical-web"
       },
       "configurations": {
         "production": {
@@ -25,9 +22,9 @@
       }
     },
     "serve": {
-      "executor": "@nx-plus/vue:dev-server",
+      "executor": "@nrwl/vite:dev-server",
       "options": {
-        "browserTarget": "offical-web:build"
+        "buildTarget": "offical-web:build"
       },
       "configurations": {
         "production": {
@@ -53,6 +50,21 @@
         "ci": {
           "ci": true,
           "codeCoverage": true
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nrwl/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "offical-web:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "offical-web:build:development"
+        },
+        "production": {
+          "buildTarget": "offical-web:build:production"
         }
       }
     }
