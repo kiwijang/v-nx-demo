@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "serve app": "nx run official-web:serve"
+    "serve app": "nx run official-web:serve",
+    "postinstall": "node node_modules/@nx-plus/vue/patch-nx-dep-graph.js"
   },
   "private": true,
   "dependencies": {

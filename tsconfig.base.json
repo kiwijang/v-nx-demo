@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@v-nx-demo/libs/vnx-lib": ["libs/libs/vnx-lib/src/index.ts"]
+      "@v-nx-demo/my-lib": ["libs/my-lib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
