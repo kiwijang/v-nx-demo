@@ -1,2 +1,5 @@
 import HelloWorld from './lib/HelloWorld.vue';
-export { HelloWorld };
+import NxvButtonDirective from './lib/button/button-directive';
+
+const Directives = [NxvButtonDirective];
+export { HelloWorld, Directives };
