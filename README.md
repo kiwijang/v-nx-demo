@@ -19,3 +19,8 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+
+## 關於
+
+![image](https://user-images.githubusercontent.com/21300139/234450941-a57c31e9-126c-4f0f-9c11-7cc93730c7af.png)
