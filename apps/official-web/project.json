@@ -7,7 +7,7 @@
     "build": {
       "executor": "@nrwl/vite:build",
       "options": {
-        "outputPath": "dist/apps/official-web"
+        "outputPath": "docs/apps/official-web"
       },
       "configurations": {
         "production": {

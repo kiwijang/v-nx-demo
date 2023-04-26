@@ -7,7 +7,7 @@
     "build": {
       "executor": "@nrwl/vite:build",
       "options": {
-        "outputPath": "dist/apps/paradise",
+        "outputPath": "docs/apps/paradise",
         "configFile": "apps/paradise/vite.config.ts",
         "postcssConfig": "../../postcss.config.js",
         "logLevel": "info",
