@@ -15,5 +15,6 @@
     "src/**/*.test.tsx",
     "src/**/*.spec.tsx",
     "src/**/*.d.ts"
-  ]
+  ],
+  "composite": true,
 }

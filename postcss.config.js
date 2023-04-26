@@ -1,5 +1,6 @@
 const { join } = require('path');
 
+console.log('postcss 👻')
 module.exports = {
   plugins: {
     tailwindcss: {

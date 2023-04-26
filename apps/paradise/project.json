@@ -7,7 +7,17 @@
     "build": {
       "executor": "@nrwl/vite:build",
       "options": {
-        "outputPath": "dist/apps/paradise"
+        "outputPath": "dist/apps/paradise",
+        "configFile": "apps/paradise/vite.config.ts",
+        "postcssConfig": "../../postcss.config.js",
+        "logLevel": "info",
+        "force": true,
+        "watch": true,
+        "index": "apps/paradise/index.html",
+        "main": "apps/paradise/src/main.ts",
+        "tsConfig": "apps/paradise/tsconfig.app.json",
+        "assets": ["apps/paradise/favicon.ico", "apps/paradise/src/assets"],
+        "styles": ["apps/paradise/src/styles.css"],
       },
       "configurations": {
         "production": {

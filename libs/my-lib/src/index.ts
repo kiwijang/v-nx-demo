@@ -1,5 +1,7 @@
-import HelloWorld from './lib/HelloWorld.vue';
-import NxvButtonDirective from './lib/button/button-directive';
+import MyButtonDirective from './lib/button/button-directive';
+import MyButton from './lib/button/MyButton.vue';
+import SideBar from './lib/sidebar/SideBar.vue';
+import Header from './lib/header/Header.vue';
 
-const Directives = [NxvButtonDirective];
-export { HelloWorld, Directives };
+const Directives = [MyButtonDirective];
+export { Directives, MyButton, SideBar, Header };

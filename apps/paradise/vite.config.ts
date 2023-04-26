@@ -3,8 +3,24 @@ import { defineConfig } from 'vite';
 
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 import vue from '@vitejs/plugin-vue';
+import { resolve } from 'path'
 
+console.log("vite 🥰")
 export default defineConfig({
+  css: {
+    modules: {
+      localsConvention: 'camelCase'
+    }
+  },
+
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+      },
+    },
+  },
+
   cacheDir: '../../node_modules/.vite/paradise',
 
   server: {
@@ -23,7 +39,6 @@ export default defineConfig({
       root: '../../',
     }),
   ],
-
 
   // Uncomment this if you are using workers.
   // worker: {

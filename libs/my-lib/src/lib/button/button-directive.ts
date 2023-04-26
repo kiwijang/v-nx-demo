@@ -7,6 +7,6 @@ export default {
     },
   },
   install(app: any) {
-    app.directive('nxv-button', this.Directive);
+    app.directive('my-button', this.Directive);
   },
 };
